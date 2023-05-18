@@ -28,13 +28,8 @@ class MainActivityTest {
     @JvmField
     val leak = DetectLeaksAfterTestSuccess()
 
-
     @Test
     fun mainActivityTest() {
-        val x = Intrinsics.areEqual(1,1)
-        println("this class exist in UI tests=>"+Intrinsics::class)
-
-
         val materialButton = onView(
             allOf(
                 withId(R.id.button),

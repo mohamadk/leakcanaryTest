@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val app = this.application as App
 
         findViewById<View>(R.id.button).setOnClickListener {
-            app.addTextView(findViewById<View>(R.id.textView))
+            app.addTextView(findViewById(R.id.textView))
         }
 
         findViewById<View>(R.id.second).setOnClickListener {
